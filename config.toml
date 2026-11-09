@@ -12,13 +12,13 @@ app-name = "YouTube"
 patches-source = "github:MorpheApp/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
 rv-brand = "Morphe"
-build-mode = "both" # Options 'apk', 'module', or 'both'
+build-mode = "apk" # Non-root APK only
 arch = "arm64-v8a" # Options 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64', or 'universal'
 # Stable Support #
 # version = "auto" # 'auto', 'experimental', 'latest' or a version number
 # Experimental Support #
 # version = "21.28.207" # Version Supporting Miniplayer Type
-version = "experimental"
+version = "auto" # Automatically select a supported app version
 # version = "21.36.45-SECONDARY"
 dpi = "nodpi" # Options '120-640dpi', or 'nodpi'
 excluded-patches = """\
@@ -27,7 +27,7 @@ excluded-patches = """\
     'Custom branding' \
     """
 # patches-version = "dev" # Options 'latest', 'dev', or A specific version tag
-patches-version = "v2.1.0-dev.10"
+patches-version = "latest" # Latest released patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.google.android.youtube"
@@ -39,12 +39,12 @@ app-name = "YT Music"
 patches-source = "github:MorpheApp/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
 rv-brand = "Morphe"
-build-mode = "both" # Options 'apk', 'module', or 'both'
+build-mode = "apk" # Non-root APK only
 arch = "arm64-v8a" # Options 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64', or 'universal'
 # Stable Support #
 # version = "auto" # 'auto', 'experimental', 'latest' or a version number
 # Experimental Support #
-version = "experimental"
+version = "auto" # Automatically select a supported app version
 #version = "9.34.52"
 excluded-patches = """\
     'Custom branding name for YouTube Music' \
@@ -52,13 +52,13 @@ excluded-patches = """\
     'Custom branding' \
     """
 # patches-version = "dev" # Options 'latest', 'dev', or A specific version tag
-patches-version = "v2.1.0-dev.10"
+patches-version = "latest" # Latest released patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Reddit-Morphe]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Reddit"
 patches-source = "github:MorpheApp/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -84,7 +84,7 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 
 [Google-Photos-De-Vanced]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Google Photos"
 patches-source = "github:RookieEnough/De-Vanced"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -107,7 +107,7 @@ uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
 [Google-Photos-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Google Photos"
 patches-source = "github:rushiranpise/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -127,7 +127,7 @@ uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
 [Google-Photos-Akash]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Google Photos"
 patches-source = "github:Akash-Sriram/morphe-google-photos"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -147,7 +147,7 @@ uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
 [Facebook-De-Vanced]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:RookieEnough/De-Vanced"
@@ -164,7 +164,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-Froggo]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:SapitoSucio/FroggoMorphePatches"
@@ -188,7 +188,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-Andrew-APK]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:andrewliang25/morphe-patches"
@@ -209,7 +209,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-Andrew-Root]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:andrewliang25/morphe-patches"
@@ -233,7 +233,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-SysAdminDoc-APK]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:SysAdminDoc/Hushfacebook"
@@ -266,7 +266,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-SysAdminDoc-Root]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook"
 pkg-name = "com.facebook.katana"
 patches-source = "github:SysAdminDoc/Hushfacebook"
@@ -303,7 +303,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/faceb
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 
 [Facebook-Messenger-De-Vanced]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook Messenger"
 pkg-name = "com.facebook.orca"
 patches-source = "github:RookieEnough/De-Vanced"
@@ -318,7 +318,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/messe
 uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 
 [Facebook-Messenger-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook Messenger"
 pkg-name = "com.facebook.orca"
 patches-source = "github:rushiranpise/morphe-patches"
@@ -336,7 +336,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/messe
 uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 
 [Facebook-Messenger-SysAdminDoc]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Facebook Messenger"
 pkg-name = "com.facebook.orca"
 patches-source = "github:SysAdminDoc/HushMessenger"
@@ -356,7 +356,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-technologies-llc/messe
 uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 
 [Threads-Chiggi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Threads"
 pkg-name = "com.instagram.barcelona"
 patches-source = "github:durgesh0505/chiggi_morphe_patches"
@@ -371,7 +371,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/threads-an-instagram-
 uptodown-dlurl = "https://threads.en.uptodown.com/android"
 
 [Threads-SysAdminDoc]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Threads"
 pkg-name = "com.instagram.barcelona"
 patches-source = "github:SysAdminDoc/HushThreads"
@@ -393,7 +393,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/threads-an-instagram-
 uptodown-dlurl = "https://threads.en.uptodown.com/android"
 
 [Twitter-Piko]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Twitter"
 patches-source = "github:crimera/piko"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -414,7 +414,7 @@ github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.twitter.an
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [X-Piko]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "X"
 patches-source = "github:crimera/piko"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -434,7 +434,7 @@ github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.twitter.an
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [Twitter-Piko-NewX]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Twitter"
 patches-source = "github:crimera/piko-newx"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -454,7 +454,7 @@ github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.twitter.an
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [X-Piko-NewX]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "X"
 patches-source = "github:crimera/piko-newx"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -473,7 +473,7 @@ github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.twitter.an
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [Instagram-Piko]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Instagram"
 patches-source = "github:crimera/piko"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -496,7 +496,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.instagram.android"
 
 [Instagram-SysAdminDoc-APK]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Instagram"
 patches-source = "github:SysAdminDoc/HushGram"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -532,7 +532,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.instagram.android"
 
 [Instagram-SysAdminDoc-Root]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Instagram"
 patches-source = "github:SysAdminDoc/HushGram"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -571,7 +571,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.instagram.android"
 
 [1-1-1-1-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "1.1.1.1"
 pkg-name = "com.cloudflare.onedotonedotonedotone"
 patches-source = "github:rushiranpise/morphe-patches"
@@ -585,7 +585,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer
 uptodown-dlurl = "https://1-1-1-1.en.uptodown.com/android"
 
 [Proton-VPN-HXReborn]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Proton VPN"
 patches-source = "github:hxreborn/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -598,7 +598,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvp
 uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
 
 [Windscribe-VPN-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Windscribe VPN"
 patches-source = "github:rushiranpise/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -611,7 +611,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/windscribe/windscribe-vpn"
 uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
 
 [TeraBox-HXReborn]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "TeraBox"
 patches-source = "github:hxreborn/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -626,7 +626,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-stor
 uptodown-dlurl = "https://terabox.en.uptodown.com/android"
 
 [Speedtest-by-Ookla-SatanMerde]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Speedtest by Ookla"
 patches-source = "github:SatanMerde/D-moniakPatches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -640,7 +640,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/ookla/speedtest"
 uptodown-dlurl = "https://speedtest-net-mobile.en.uptodown.com/android"
 
 [Send-Files-To-TV-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Send Files To TV"
 patches-source = "github:rushiranpise/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -653,7 +653,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/yablio/send-files-to-tv/"
 uptodown-dlurl = "https://send-files-to-tv.en.uptodown.com/android"
 
 [APKMirror-Installer-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "APKMirror Installer"
 patches-source = "github:rushiranpise/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -665,7 +665,7 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/apkmirror/apkmirror-installer-official/"
 
 [Bluetooth-Keyboard-Mouse-Rushi]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Bluetooth Keyboard & Mouse"
 patches-source = "github:rushiranpise/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -678,7 +678,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/appground-io/bluetooth-keyboard
 uptodown-dlurl = "https://bluetooth-keyboard-and-mouse.en.uptodown.com/android"
 
 [PokeRaid-DanielTheManiel]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "PokeRaid - for Pokémon GO Raid"
 patches-source = ["github:Dan1elTheMan1el/Morphe-Patches", "github:Nai64/Nai64Patches"]
 patches-version = ["dev", "latest"]
@@ -691,7 +691,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/pyde-technologies-ltd/pokeraid-
 uptodown-dlurl = "https://pokeraid-worldwide-remote-ra.en.uptodown.com/android"
 
 [Gboard-Jason]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Gboard"
 patches-source = "github:jasonwu1994/Gboard-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -711,7 +711,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/gboard/"
 uptodown-dlurl = "https://gboard-go.en.uptodown.com/android"
 
 [Pixel-Camera-Pro-Akshayykadam]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Pixel Camera Pro"
 pkg-name = "com.google.android.GoogleCamera"
 patches-source = "github:Akshayykadam/Pixel-Camera"
@@ -727,7 +727,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/camera/"
 uptodown-dlurl = "https://google-camera.en.uptodown.com/android"
 
 [Pixel-Camera-Basic-Akshayykadam]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Pixel Camera Basic"
 pkg-name = "com.google.android.GoogleCamera"
 patches-source = "github:Akshayykadam/Pixel-Camera"
@@ -746,7 +746,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/camera/"
 uptodown-dlurl = "https://google-camera.en.uptodown.com/android"
 
 [Claude-by-Anthropic-SatanMerde]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Claude by Anthropic"
 pkg-name = "com.anthropic.claude"
 patches-source = "github:SatanMerde/D-moniakPatches"
@@ -766,7 +766,7 @@ github-dlurl = "https://github.com/dj-tanjid/AppRepo/releases/tag/com.anthropic.
 uptodown-dlurl = "https://claude.en.uptodown.com/android"
 
 [DeepL-SatanMerde]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "DeepL"
 patches-source = "github:SatanMerde/D-moniakPatches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -786,7 +786,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/deepl-se/deepl-translate/"
 uptodown-dlurl = "https://deepl.en.uptodown.com/android"
 
 [Google-Maps-BearInMindCat-APK]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Google Maps"
 patches-source = "github:bearinmindcat/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -804,7 +804,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/maps/"
 uptodown-dlurl = "https://google-maps.en.uptodown.com/android"
 
 [Google-Maps-BearInMindCat-Root]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Google Maps"
 patches-source = "github:bearinmindcat/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -827,7 +827,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/maps/"
 uptodown-dlurl = "https://google-maps.en.uptodown.com/android"
 
 [Waze-BearInMindCat-APK]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Waze"
 patches-source = "github:bearinmindcat/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -852,7 +852,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/waze/"
 uptodown-dlurl = "https://waze.en.uptodown.com/android"
 
 [Waze-BearInMindCat-Root]
-enabled = true
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Waze"
 patches-source = "github:bearinmindcat/morphe-patches"
 cli-source = "github:MorpheApp/morphe-desktop"
@@ -880,7 +880,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/waze/"
 uptodown-dlurl = "https://waze.en.uptodown.com/android"
 
 [Discord-Venus]
-enabled = false
+enabled = false # Disabled for the Sathi YouTube build
 app-name = "Discord"
 pkg-name = "com.discord"
 patches-source = "github:VenusIsJaded/Venus-Patches"
